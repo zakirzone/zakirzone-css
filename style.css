@@ -1,0 +1,365 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.containerx {
+  height: auto;
+  width: 100%;
+  background-color: azure;
+  display: grid;
+  place-items: center;
+  padding: 10px 5px;
+}
+
+.box {
+  background-color: white;
+  max-width: 820px;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.box .main-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: indigo;
+  line-height:1.4;
+}
+
+.box .card {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-right:10px;
+
+}
+
+/* To make radio button hidden */
+.card input[type="radio"] {
+  display: none;
+}
+
+.card .list {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color:#FFEC99;
+
+}
+
+.list label {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  gap: 5px;
+  font-size: 17px;
+  color: black;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.list label:hover {
+  color: blue;
+}
+
+/* To make label color white */
+#home:checked ~ .list .home,
+#blog:checked ~ .list .blog,
+#help:checked ~ .list .help,
+#code:checked ~ .list .code,
+#about:checked ~ .list .about,
+#about2:checked ~ .list .about2 {
+ color: white;
+}
+
+.list label i {
+  font-size: 14pt;
+}
+
+.list .topic {
+  font-size: 12pt;
+  font-weight: 500;
+
+}
+
+  p {
+  font-family: Noto Sans Bengali, sans-serif;
+  }
+  
+  li {
+  font-family: Noto Sans Bengali, sans-serif;
+  }
+  
+.indicator {
+  width: 100%;
+  height: 50px;
+  background-color: blue;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  transition: 0.3s ease-in;
+}
+
+/* To move the indicatore based on click */
+#home:checked ~ .list .indicator {
+  top: 0;
+}
+
+#blog:checked ~ .list .indicator {
+  top: 50px;
+}
+
+#help:checked ~ .list .indicator {
+  top: 100px;
+}
+
+#code:checked ~ .list .indicator {
+  top: 150px;
+}
+
+#about:checked ~ .list .indicator {
+  top: 200px;
+}
+  
+#about2:checked ~ .list .indicator {
+  top: 250px;
+}
+
+.card .content {
+  width: calc(100% - 260px);
+}
+
+/* To hide all the content */
+.content .home,
+.content .blog,
+.content .help,
+.content .code,
+.content .about,
+.content .about2 {
+  display: none;
+}
+
+.content .sub-title {
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+.content hr {
+  height: 3px;
+  background-color: black;
+}
+
+.content .txt {
+  margin-top: 5px;
+  color: black;
+  text-align: justify;
+  font-size: 12pt;
+}
+
+.span {
+  color: rgb(200, 20, 0);
+  font-weight: 700;
+}
+/* To show the content based on selection */
+
+#home:checked ~ .content .home {
+  display: block;
+}
+
+#blog:checked ~ .content .blog {
+  display: block;
+}
+
+#help:checked ~ .content .help {
+  display: block;
+}
+
+#code:checked ~ .content .code {
+  display: block;
+}
+
+#about:checked ~ .content .about {
+  display: block;
+}
+  
+#about2:checked ~ .content .about2 {
+  display: block;
+}
+
+/*blockquote------*/
+
+ .sub-headingac {
+            font-size: 1em;
+            color: #2980b9 !important;
+            margin-top: 10px;
+           line-height:1.6;
+        }
+
+.framed {
+  border-image-source: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDm7rt9XRnMIvh_wtREpqluqUOzO3Ix1e-A2xXXGtxv9kNIwPZrolEj48fPIfV2pc1f6N2hKvSCP9rtdjLlsGP4YXDYBRIBihDtiZR-bTv26Nq-17CY7Tk3rLnWX_GvA5ukLyVa7RVsCzW32Mabv13jcZUs31CGgwbcpTvbfDyPxVSc6ZTzBVg_OxosJkh/s1600/Web-Tech-Info-@zakirzone.jpg");
+  border-image-slice: 93 92 87 92; 
+  border-image-repeat: stretch;
+
+  border-style: inset;
+  border-width: 60px;
+
+  display: grid;
+  row-gap: 2rem;
+  font-size:12pt;
+
+  background-color: #ffe;
+  margin: 0 auto;
+  padding: 0.5rem;
+
+  resize: both;
+  overflow: auto;
+
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3), 0 0 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+blockquote {
+  margin: 0;
+  background-color: #D4FED2;
+  color:red;
+}
+
+@keyframes pointing {
+  to {
+    transform: translateY(3px);
+  }
+}
+
+div {
+  height: min-content;
+}
+
+.framed div {
+  justify-self: end;
+  align-self: end;
+   background-color: red;
+  color:white;
+
+  padding-inline-end: 0.75rem;
+
+  font-size: .85em;
+
+  animation: 0.5s linear 0s infinite alternate pointing;
+}
+  
+  
+   .ag-collection-popup_awards {
+    margin: 0 0 15px;
+  }
+
+  .ag-collection-popup-awards_img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    object-fit: fill;
+  }
+
+  
+.wrapingimage  {  
+float: left;   
+margin: 30px 12px 3px 4px;   
+border: 2px solid blue;  
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+  .box {
+    padding: 15px;
+  }
+
+  .box .main-title {
+    font-size: 24px;
+    line-height:1.4;
+  }
+
+  .card {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card .list {
+    width: 100%;
+  }
+
+  .card .content {
+    width: 100%;
+  }
+
+  .list label {
+    font-size: 15px;
+    padding-left: 15px;
+  }
+
+  .indicator {
+    height: 40px;
+  }
+
+  .content .sub-title {
+    font-size: 18px;
+    line-height:1.4
+  }
+
+  .content .txt {
+    font-size: 14px;
+  }
+
+  .oval0 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .framed {
+    font-size: 14pt;
+    border-width: 40px;
+  }
+
+  .framed div {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box {
+    padding: 10px;
+  }
+
+  .box .main-title {
+    font-size: 20px;
+  }
+
+  .list label {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+
+  .content .sub-title {
+    font-size: 16px;
+  }
+
+  .content .txt {
+    font-size: 13px;
+  }
+
+  .oval0 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .framed {
+    font-size: 12pt;
+    border-width: 15px;
+  }
+
+  .framed div {
+    font-size: 0.75em;
+  }
+}
