@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+.site-header {
+  background: #3a3a3a;
+  padding: 10px 20px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .menu {
+  list-style: none;
+  display: flex;
+}
+.navbar .menu li {
+  margin-left: 20px;
+}
+.navbar .menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+.logo {
+  color: #fff;
+  font-weight: bold;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.hero {
+  display: flex;
+  gap: 20px;
+}
+.main-feature {
+  flex: 2;
+  background: #fff;
+  padding: 15px;
+}
+.main-feature img {
+  width: 100%;
+  height: auto;
+}
+.side-features {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.side-features div {
+  background: #fff;
+  padding: 10px;
+}
+.content {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+.main-posts {
+  flex: 3;
+  background: #fff;
+  padding: 15px;
+}
+.section-title {
+  margin-bottom: 10px;
+  border-left: 5px solid red;
+  padding-left: 10px;
+  font-size: 18px;
+}
+article {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.sidebar {
+  flex: 1;
+  background: #fff;
+  padding: 15px;
+}
+.sidebar ul {
+  list-style: none;
+  padding-left: 15px;
+}
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background: #3a3a3a;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .hero, .content {
+    flex-direction: column;
+  }
+}
